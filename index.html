@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <!-- Meta tags for social media banners, these should be filled in appropriatly as they are your "business card" -->
+  <!-- Replace the content tag with appropriate information -->
+  <meta name="description" content="DESCRIPTION META TAG">
+  <meta property="og:title" content="SOCIAL MEDIA TITLE TAG"/>
+  <meta property="og:description" content="SOCIAL MEDIA DESCRIPTION TAG TAG"/>
+  <meta property="og:url" content="URL OF THE WEBSITE"/>
+  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X630-->
+  <meta property="og:image" content="static/image/your_banner_image.png" />
+  <meta property="og:image:width" content="1200"/>
+  <meta property="og:image:height" content="630"/>
+
+  <meta name="twitter:title" content="TWITTER BANNER TITLE META TAG">
+  <meta name="twitter:description" content="TWITTER BANNER DESCRIPTION META TAG">
+  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X600-->
+  <meta name="twitter:image" content="static/images/your_twitter_banner_image.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <!-- Keywords for your paper to be indexed by-->
+  <meta name="keywords" content="KEYWORDS SHOULD BE PLACED HERE">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Tell What You Hear From What You See - Video to Audio Generation Through Text (NeurIPS 2024)</title>
+  <link rel="icon" type="image/x-icon" href="static/images/icon.ico">
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+  rel="stylesheet">
+
+  <link rel="stylesheet" href="static/css/bulma.min.css">
+  <link rel="stylesheet" href="static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="static/css/fontawesome.all.min.css">
+  <link rel="stylesheet"
+  href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="static/css/index.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
+  <script defer src="static/js/fontawesome.all.min.js"></script>
+  <script src="static/js/bulma-carousel.min.js"></script>
+  <script src="static/js/bulma-slider.min.js"></script>
+  <script src="static/js/index.js"></script>
+</head>
+<body>
+
+  <section class="hero">
+    <div class="hero-body">
+      <div class="container is-max-desktop">
+        <div class="columns is-centered">
+          <div class="column has-text-centered">
+            <h1 class="title is-1 publication-title">Tell What You Hear From What You See - Video to Audio Generation Through Text (NeurIPS 2024)</h1>
+            <div class="is-size-5 publication-authors">
+              <span class="author-block">
+                <a href="mailto:xl1995@uw.edu" target="_blank">Xiulong Liu</a><sup>1</sup>,
+              </span>
+              <span class="author-block">
+                <a href="mailto:sukun1045@gmail.com" target="_blank">Kun Su</a><sup>1</sup>,
+              </span>
+              <span class="author-block">
+                <a href="mailto:shlizee@uw.edu" target="_blank">Eli Shlizerman</a><sup>1</sup>,
+              </span>
+            </div>
+            <div class="is-size-5 publication-authors">
+              <span class="author-block"><sup>1</sup>University of Washington</span>
+            </div>
+
+            <div class="column has-text-centered">
+              <div class="publication-links">
+                   <!-- Arxiv PDF link -->
+
+            <!-- Github link -->
+            <span class="link-block">
+              <a href="https://drive.google.com/file/d/1uo4Hx6tAnqVkU65AfPHGwFAftysTCXxs/view" target="_blank"
+              class="external-link button is-normal is-rounded is-dark">
+              <span class="icon">
+                <i class="fab fa-github"></i>
+              </span>
+              <span>Data</span>
+            </a>
+          </span>
+
+          <span class="link-block">
+            <a href="https://github.com/DragonLiu1995/multimodal-llm-for-audio-gen" target="_blank"
+            class="external-link button is-normal is-rounded is-dark">
+            <span class="icon">
+              <i class="fab fa-github"></i>
+            </span>
+            <span>Code</span>
+          </a>
+        </span>
+
+          <!-- ArXiv abstract Link -->
+          <span class="link-block">
+            <a href="https://arxiv.org/abs/2411.05679" target="_blank"
+            class="external-link button is-normal is-rounded is-dark">
+            <span class="icon">
+              <i class="ai ai-arxiv"></i>
+            </span>
+            <span>arXiv</span>
+          </a>
+        </span>
+
+
+        <span class="link-block">
+          <a href="https://dragonliu1995.github.io/VATT/" target="_blank"
+          class="external-link button is-normal is-rounded is-dark">
+          <span class="icon">
+            <i class="fa fa-video"></i>
+          </span>
+          <span>Qualitative Samples</span>
+        </a>
+      </span>
+
+        </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Teaser figure -->
+  <section class="hero teaser">
+    <div class="container is-max-desktop">
+      <div class="hero-body">
+        <figure>
+          <!-- Your image here -->
+          <img src="static/images/teaser_vatt.png" alt="Teaser Image">
+          <figcaption class="has-text-centered">VATT is a flexible audio generative model capable of generating audio in two modes: i.
+            When a silent video is the sole input, the model generates the audio along with a caption describing
+            the possible audio that could match the video. ii. When in addition to the video, a text prompt is
+            provided, the model generates audio aligned with both the video and the given text prompt.</figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+  <!-- End teaser figure -->
+
+  <!-- Paper abstract -->
+  <section class="section hero is-light">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-four-fifths">
+          <h2 class="title is-3">Abstract</h2>
+          <div class="content has-text-justified">
+            <p>
+              The content of visual and audio scenes is multi-faceted such that a video stream can be paired with various audio streams and vice-versa. Thereby, in video-to-audio generation task, it is imperative to introduce steering approaches for controlling the generated audio. While Video-to-Audio generation is a well-established generative task, existing methods lack such controllability. In this work, we propose VATT, a multi-modal generative framework that takes a video and an optional text prompt as input, and generates audio and optional textual description (caption) of the audio. Such a framework has two unique advantages: i) Video-to-Audio generation process can be refined and controlled via text which complements the context of the visual information, and ii) The model can suggest what audio to generate for the video by generating audio captions. VATT consists of two key modules: VATT Converter, which is an LLM that has been fine-tuned for instructions and includes a projection layer that maps video features to the LLM vector space, and VATT Audio, a bi-directional transformer that generates audio tokens from visual frames and from optional text prompt using iterative parallel decoding. The audio tokens and the text prompt are used by a pretrained neural codec to convert them into a waveform. Our experiments show that when VATT is compared to existing video-to-audio generation methods in objective metrics, such as VGGSound audiovisual dataset, it achieves competitive performance when the audio caption is not provided. When the audio caption is provided as a prompt, VATT achieves even more refined performance (with lowest KLD score of 1.41). Furthermore, subjective studies asking participants to choose the most compatible generated audio for a given silent video, show that VATT Audio has been chosen on average as a preferred generated audio than the audio generated by existing methods. VATT enables controllable video-to-audio generation through text as well as suggesting text prompts for videos through audio captions, unlocking novel applications such as text-guided video-to-audio generation and video-to-audio captioning.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End paper abstract -->
+
+  <!-- Image carousel -->
+  <!-- <section class="hero is-small">
+    <div class="hero-body">
+      <div class="container">
+        <div id="results-carousel" class="carousel results-carousel">
+          ... Carousel items ...
+        </div>
+      </div>
+    </div>
+  </section> -->
+  <!-- End image carousel -->
+
+  <!-- Youtube video -->
+  <section class="hero is-small is-light">
+    <div class="hero-body">
+      <div class="container">
+        <h2 class="title is-3 has-text-centered">Video Presentation</h2>
+        <div class="columns is-centered has-text-centered">
+          <div class="column is-four-fifths">
+            <div class="publication-video">
+              <iframe src="https://www.youtube.com/embed/PDkbeiCc-kM" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+
+  <!-- BibTex citation -->
+  <section class="section" id="BibTeX">
+    <div class="container is-max-desktop content">
+      <h2 class="title">BibTeX</h2>
+      <pre><code>@inproceedings{NEURIPS2024_b782a346,
+        author = {Liu, Xiulong and Su, Kun and Shlizerman, Eli},
+        booktitle = {Advances in Neural Information Processing Systems},
+        editor = {A. Globerson and L. Mackey and D. Belgrave and A. Fan and U. Paquet and J. Tomczak and C. Zhang},
+        pages = {101337--101366},
+        publisher = {Curran Associates, Inc.},
+        title = {Tell What You Hear From What You See - Video to Audio Generation Through Text},
+        url = {https://proceedings.neurips.cc/paper_files/paper/2024/file/b782a3462ee9d566291cff148333ea9b-Paper-Conference.pdf},
+        volume = {37},
+        year = {2024}
+       }
+      </code></pre>
+    </div>
+  </section>
+  <!-- End BibTex citation -->
+
+  <footer class="footer">
+    <div class="container">
+      <div class="columns is-centered">
+        <div class="column is-8">
+          <div class="content">
+            <p>
+              This page was built using the <a href="https://github.com/eliahuhorwitz/Academic-project-page-template" target="_blank">Academic Project Page Template</a> which was adopted from the <a href="https://nerfies.github.io" target="_blank">Nerfies</a> project page.
+              You are free to borrow the of this website, we just ask that you link back to this page in the footer. <br> This website is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank">Creative Commons Attribution-ShareAlike 4.0 International License</a>.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Statcounter tracking code -->
+  <!-- You can add a tracker to track page visits by creating an account at statcounter.com -->
+  <!-- End of Statcounter Code -->
+
+</body>
+</html>
